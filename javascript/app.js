@@ -21,3 +21,24 @@ $("#button").on("click", function () {
         console.log(textResponse);
     })
 })
+//on-click for old-english translate button
+$("#translate").on("click", function() {
+    let engInput = $("#english").val().trim();
+    let eQueryURL = "https://api.funtranslations.com/translate/oldenglish.json?text=" + engInput;
+    $.ajax({
+        url: eQueryURL,
+        method: "GET",
+    }).then(function(data) {
+        console.log(data);
+        let unTransText = data.contents.text;
+        let transResponse = data.contents.translated
+        console.log(transResponse);
+        $("#Old-English").append(unTransText + transResponse);
+    })
+    $("#english").val("");
+})
+//on-click for the clear button
+$("#clear").on("click", function() {
+    $("#english").empty();
+    $("#Old-English").empty();
+})
