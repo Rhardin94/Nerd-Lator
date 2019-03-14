@@ -8,30 +8,31 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Nerd-lator!</title>
+    <title>Klingon Transltor</title>
   </head>
   <body>
+
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-        <h1 class="display-4">Nerd-lator</h1>
-        <p class="lead">Nerd-lator is a fun word-translator that calls upon APIs to translate basic english into fun nerd-based text (think Klingon, Yoda-Speak, etc), and then allows you to send that translated text to your friends via copying text to clipboard.</p>
-        <hr class="my-4">
-        </div>
+      <div class="container">
+        <h1 class="display-4">Klingon Transltor</h1>
+        <p class="lead">Translate English into Star Trek native language Klingon.</p>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <a href="klingon.html"><span class="border border-ligh">Klingon Transltor</span></a>
-            </div>
-            <div class="col">
-                <a href="Old-English.html"><span class="border border-ligh">Old English Transltor</span></a>
-            </div>
+    <form>
+      <div class="row">
+        <div class="col">
+          <textarea class="form-control" id="english" rows="10" placeholder="input text here"></textarea> 
         </div>
-    </div>
+        <div class="col">
+          <textarea class="form-control" id="Klingon" rows="10" placeholder="Klingon text here"></textarea>
+        </div>
+      </div>
+      <!--Can you make your ID's different from the Old-English page for now?-->
+      <button type="button" id="translated" class="button button-primary button-large">translate</button>
+      <button type="button" id="cleared" class="button button-secondary button-large">clear</button>
 
-    <img src="https://i.etsystatic.com/6027615/r/il/fafacd/1409442713/il_570xN.1409442713_5sx2.jpg" class="rounded float-left" alt="responsive image">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Helmeted_Medieval_Knight_or_Soldier_%281%29.JPG/220px-Helmeted_Medieval_Knight_or_Soldier_%281%29.JPG" class="rounded float-right" alt="responsive image">
+    </form>
 
 
     <!-- Optional JavaScript -->

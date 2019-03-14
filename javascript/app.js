@@ -9,7 +9,7 @@ $("#copy-to-clipboard").on("click", function () {
     tempInput.remove();
 });
 //on-click for ajax request
-$("#button").on("click", function () {
+$("#translated").on("click", function () {
     let textInput = $("#text").val().trim();
     var queryURL = "https://api.funtranslations.com/translate/klingon.json?text=" + textInput;
 
@@ -33,7 +33,7 @@ $("#translate").on("click", function() {
         let unTransText = data.contents.text;
         let transResponse = data.contents.translated
         console.log(transResponse);
-        $("#Old-English").append(unTransText + transResponse);
+        $("#Old-English").text(unTransText + transResponse);
     })
     $("#english").val("");
 })
@@ -41,4 +41,8 @@ $("#translate").on("click", function() {
 $("#clear").on("click", function() {
     $("#english").empty();
     $("#Old-English").empty();
+})
+//on-click for klingon clear
+$("#cleared").on("click", function() {
+    $("#Klingon").empty();
 })
