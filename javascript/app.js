@@ -1,26 +1,25 @@
 //On-click that copies translated text to the clipboard
 //Reference found here: "https://codepen.io/shaikmaqsood/pen/XmydxJ"
-$("#Copy to Clipboard").on("click", function() {
-    let transText = $("#Klingon").val().trim();
-    let tempInput = $("<input>");
-    $("body").append(tempInput);
-    tempInput.val($(transText).text()).select();
+$("#copy-to-clipboard").on("click", function() {
+    let $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#Klingon").text()).select();
     document.execCommand("copy"); 
-    tempInput.remove();
+    $temp.remove();
 });
 //on-click for ajax request
 $("#translated").on("click", function() {
-    let textInput = $("#english").val().trim();
+    let textInput = $("#original").val().trim();
     var queryURL = "https://api.funtranslations.com/translate/klingon.json?text=" + textInput;
-
     $.ajax({
         url: queryURL,
         method: "GET",
-    }).then(function (response) {
+    }).then(function(response) {
         let textResponse = response.contents.translated;
         console.log(textResponse);
         $("#Klingon").append(textResponse);
     })
+    $("#original").val("");
 })
 //on-click for old-english translate button
 $("#translate").on("click", function() {
