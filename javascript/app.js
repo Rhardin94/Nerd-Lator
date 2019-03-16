@@ -7,19 +7,21 @@ $("#copy-to-clipboard").on("click", function() {
     document.execCommand("copy"); 
     $temp.remove();
 });
-//on-click for ajax request
+//on-click for klingon translate
 $("#translated").on("click", function() {
     let textInput = $("#original").val().trim();
     var queryURL = "https://api.funtranslations.com/translate/klingon.json?text=" + textInput;
+    
     $.ajax({
         url: queryURL,
         method: "GET",
     }).then(function(response) {
         let textResponse = response.contents.translated;
+        let textHolder = $("<span").text(textResponse);
+        textHolder.attr("class", "fadeIn animated");
         console.log(textResponse);
-        $("#Klingon").append(textResponse);
+        $("#Klingon").append(textHolder);
     })
-    $("#original").val("");
 })
 //on-click for old-english translate button
 $("#translate").on("click", function() {
@@ -30,10 +32,11 @@ $("#translate").on("click", function() {
         method: "GET",
     }).then(function(data) {
         console.log(data);
-        let unTransText = data.contents.text;
         let transResponse = data.contents.translated
+        let transHolder = $("<span>").text(transResponse);
+        transHolder.attr("class", "fadeIn animated");
         console.log(transResponse);
-        $("#Old-English").append(unTransText + transResponse);
+        $("#Old-English").append(transHolder);
     })
     $("#english").val("");
 })
