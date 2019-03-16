@@ -18,6 +18,7 @@ $(document).ready(function () {
     $("#original").hide();
     $("#origAnimated").show();
     $("#origAnimated").append(textHolder);
+    window.setTimeout(divSwap, 6000);
     textHolder.attr("class", "fadeOut animated");   
     $.ajax({
       url: queryURL,
@@ -30,6 +31,11 @@ $(document).ready(function () {
       $("#Klingon").append(textHolder);
     })
   })
+  function divSwap() {
+    $("#origAnimated").hide();
+    $("#original").val("");
+    $("#original").show();
+  }
   //on-click for old-english translate button
   $("#translate").on("click", function () {
     let engInput = $("#english").val().trim();
