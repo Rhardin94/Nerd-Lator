@@ -11,13 +11,13 @@ $("#copy-to-clipboard").on("click", function() {
 $("#translated").on("click", function() {
     let textInput = $("#original").val().trim();
     var queryURL = "https://api.funtranslations.com/translate/klingon.json?text=" + textInput;
-    
+    $("#original").empty();
     $.ajax({
         url: queryURL,
         method: "GET",
     }).then(function(response) {
         let textResponse = response.contents.translated;
-        let textHolder = $("<span").text(textResponse);
+        let textHolder = $("<span>").text(textResponse);
         textHolder.attr("class", "fadeIn animated");
         console.log(textResponse);
         $("#Klingon").append(textHolder);
