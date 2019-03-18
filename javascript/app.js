@@ -3,10 +3,11 @@ $(document).ready(function () {
   $("#origAnimated").hide();
   //On-click that copies translated text to the clipboard
   //Reference found here: "https://codepen.io/shaikmaqsood/pen/XmydxJ"
-  $("#copy-to-clipboard").on("click", function () {
+  $("#copy-to-clipboard").on("click", function() {
+    let inputText = $("#Klingon");
     let $temp = $("<input>");
     $("body").append($temp);
-    $temp.val($("#Klingon").text()).select();
+    $temp.val($(inputText).text()).select();
     document.execCommand("copy");
     $temp.remove();
   });
@@ -18,7 +19,7 @@ $(document).ready(function () {
     $("#original").hide();
     $("#origAnimated").show();
     $("#origAnimated").append(textHolder);
-    window.setTimeout(divSwap, 6000);
+    window.setTimeout(divSwap, 3000);
     textHolder.attr("class", "fadeOut animated");   
     $.ajax({
       url: queryURL,
@@ -31,8 +32,10 @@ $(document).ready(function () {
       $("#Klingon").append(textHolder);
     })
   })
+  //Function that seamlessly transitions input box to div so text can animate
   function divSwap() {
     $("#origAnimated").hide();
+    $("#origAnimated").val("");
     $("#original").val("");
     $("#original").show();
   }
