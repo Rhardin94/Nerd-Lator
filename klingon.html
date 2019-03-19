@@ -1,19 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--klingon CSS-->
     <link rel="stylesheet" href="klingon.css">
-
-   
-
     <title>Klingon Translator</title>
-    <title>Klingon Transltor</title>
     <a href="index.html"><button type="button" id="Home" class="btn btn-primary">Home</button></a>
   </head>
   <body>
@@ -39,6 +36,18 @@
       <button type="button" id="translated" class="button button-primary button-large"><img src="https://fontmeme.com/permalink/190316/6cb08872974a451065060404cc6ef784.png" alt="star-trek-font" border="0"></a></button>
       <button type="button" id="cleared" class="button button-secondary button-large"><img src="https://fontmeme.com/permalink/190316/4bcdef82b310e7660f726f36a40b12ba.png" alt="star-trek-font" border="0"></a></button>
        
+    <div class="row m-2">
+      <div class="col">
+          <input class="form-control mb-2" id="original" rows="10" placeholder="input text here">
+          <div class="form-control mb-2" id="origAnimated"></div>
+          <button type="button" id="translated" class="btn btn-danger button-large">Translate</button>
+        </div>
+        <div class="col">
+          <div class="form-control mb-2" id="Klingon"></div>
+          <button type="button" id="copy-to-clipboard" class="btn btn-danger">Copy to Clipbopard</button>
+          <button type="button" id="cleared" class="btn btn-secondary button-large">Clear</button>
+        </div>
+      </div>
     </form>
 
     <div class="card text-center">
@@ -58,7 +67,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </div>
+    <!--jQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
     <!--Personal js file-->
-    <script src="javascript/app.js" async defer></script>
+    <script src="javascript/app.js"></script>
   </body>
 </html>
