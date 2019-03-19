@@ -58,11 +58,10 @@ var kliFacts = [
   "Klingon scientists tried to use human DNA to enhance their species. In the process, they accidentally created a virus that removed Klingon forehead ridges in its victims.",
   "Klingon culture values victory in combat above all else. Their greeting and even mating is all about violence and brutality.",
   ];
-  
   //Function to animate Old English facts
   function factAnimate(){
   const animateFacts = $(".animate-word");
-  animateFacts.addClass('animated','flipInX');
+  animateFacts.addClass('animated fadeIn');
   }
   //This setTimeout runs the facts function
   setTimeout(facts,1000);
