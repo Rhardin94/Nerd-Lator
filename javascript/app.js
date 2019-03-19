@@ -63,7 +63,7 @@ $(document).ready(function () {
     $.ajax({
       url: eQueryURL,
       method: "GET",
-    }).then(function (data) {
+    }).then(function(data) {
       let transResponse = data.contents.translated
       let engData = data.contents.text;
       let transHolder = $("<span>").text("(" + engData + ") " + transResponse);
