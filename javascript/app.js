@@ -61,7 +61,7 @@ var oeFacts = [
 //Function to animate Old English facts
 function factAnimate(){
 const animateFacts = document.querySelector('.animate-word');
-animateFacts.classList.add('animated','fadeInLeft');
+animateFacts.classList.add('animated','flipInX');
 }
 
 //This setTimeout runs the facts function
