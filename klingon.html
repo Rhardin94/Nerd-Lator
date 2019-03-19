@@ -13,6 +13,8 @@
    
 
     <title>Klingon Translator</title>
+    <title>Klingon Transltor</title>
+    <a href="index.html"><button type="button" id="Home" class="btn btn-primary">Home</button></a>
   </head>
   <body>
     <div class="wrapper">
@@ -36,6 +38,16 @@
       <!--Can you make your ID's different from the Old-English page for now?-->
       <button type="button" id="translated" class="button button-primary button-large"><img src="https://fontmeme.com/permalink/190316/6cb08872974a451065060404cc6ef784.png" alt="star-trek-font" border="0"></a></button>
       <button type="button" id="cleared" class="button button-secondary button-large"><img src="https://fontmeme.com/permalink/190316/4bcdef82b310e7660f726f36a40b12ba.png" alt="star-trek-font" border="0"></a></button>
+          <textarea class="form-control" id="original" rows="10" placeholder="input text here"></textarea> 
+          <button type="button" id="translated" class="button button-primary button-large">translate</button>
+          <button type="button" id="cleared" class="button button-secondary button-large">clear</button>
+        </div>
+        <div class="col">
+          <textarea class="form-control" id="Klingon" rows="10" placeholder="Klingon text here"></textarea>
+          <button type="button" id="copy-to-clipboard" class="btn btn-danger">copy to clipbopard</button>
+        </div>
+      </div>
+      <!--Can you make your ID's different from the Old-English page for now?-->
 
     </form>
 
@@ -48,10 +60,13 @@
     </div>
 
     <!-- Optional JavaScript -->
+    <!--jQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </div>
+    <!--Personal js file-->
+    <script src="javascript/app.js" async defer></script>
   </body>
 </html>
