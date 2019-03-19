@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#original").hide();
     $("#origAnimated").show();
     $("#origAnimated").append(textHolder);
-    window.setTimeout(divSwap, 3000);
+    window.setTimeout(divSwap, 1000);
     textHolder.addClass("animated flipOutX");   
     $.ajax({
       url: queryURL,
@@ -61,10 +61,10 @@ var kliFacts = [
   //Function to animate Old English facts
   function factAnimate(){
   const animateFacts = $(".animate-word");
-  animateFacts.addClass('animated fadeIn');
+  animateFacts.addClass('animated flipInX');
   }
   //This setTimeout runs the facts function
-  setTimeout(facts,1000);
+  setTimeout(facts, 1000);
   //facts function which dynamically shows each item from kliFacts array one at a time in a p tag with a delay timer
   function facts(){
       setTimeout(function(){
@@ -98,7 +98,7 @@ var kliFacts = [
     $("#english").hide();
     $("#engAnimated").show();
     $("#engAnimated").append(engHolder);
-    window.setTimeout(engDivSwap, 6000);
+    window.setTimeout(engDivSwap, 1000);
     engHolder.addClass("animated flipOutX");
     $.ajax({
       url: eQueryURL,
