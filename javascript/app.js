@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#original").hide();
     $("#origAnimated").show();
     $("#origAnimated").append(textHolder);
-    window.setTimeout(divSwap, 3000);
+    window.setTimeout(divSwap, 1000);
     textHolder.addClass("animated flipOutX");   
     $.ajax({
       url: queryURL,
@@ -49,6 +49,46 @@ $(document).ready(function () {
     $("#original").empty();
     $("#origAnimated").empty();
   })
+  //Array for Klingon facts
+var kliFacts = [
+  "The Klingons have long been a major enemy to the Federation. The Klingon Empire is one of the most powerful alliances in the Star Trek Galaxy",
+  "The Klingons are most recognized for having aggressive, war-like behavior. Combat is their defining characteristic.",
+  "Though the Klingons can be brutal, they're more than just beast-like thugs. The Klingons can be a noble race with an emphasis on honor and ritual.",
+  "One of the most popular Klingons is Worf, played by Michael Dorn. Worf served as the security officer aboard the Enterprise-D on Star Trek: The Next Generation. ",
+  "Klingon scientists tried to use human DNA to enhance their species. In the process, they accidentally created a virus that removed Klingon forehead ridges in its victims.",
+  "Klingon culture values victory in combat above all else. Their greeting and even mating is all about violence and brutality.",
+  ];
+  //Function to animate Old English facts
+  function factAnimate(){
+  const animateFacts = $(".animate-word");
+  animateFacts.addClass('animated flipInX');
+  }
+  //This setTimeout runs the facts function
+  setTimeout(facts, 1000);
+  //facts function which dynamically shows each item from kliFacts array one at a time in a p tag with a delay timer
+  function facts(){
+      setTimeout(function(){
+          $(".cool-facts").html("<p class=animate-word>" + kliFacts[0]);
+          factAnimate();
+      }, 2000);
+      setTimeout(function(){
+          $(".cool-facts").html("<p class=animate-word>" + kliFacts[1]);
+          factAnimate();
+      }, 8000);
+      setTimeout(function(){
+          $(".cool-facts").html("<p class=animate-word>" +kliFacts[2]);
+          factAnimate()
+      }, 14000);
+      setTimeout(function(){
+          $(".cool-facts").html("<p class=animate-word>" +kliFacts[3]);
+          factAnimate()
+      }, 20000);
+      setTimeout(function(){
+          $(".cool-facts").html("<p class=animate-word>" +kliFacts[4]);
+          factAnimate()
+      }, 26000);
+      setTimeout(facts, 32000);
+  }
   //Functions for Old-English.html  }
   //on-click for old-english translate button
   $("#translate").on("click", function () {
@@ -58,7 +98,7 @@ $(document).ready(function () {
     $("#english").hide();
     $("#engAnimated").show();
     $("#engAnimated").append(engHolder);
-    window.setTimeout(engDivSwap, 6000);
+    window.setTimeout(engDivSwap, 1000);
     engHolder.addClass("animated flipOutX");
     $.ajax({
       url: eQueryURL,
