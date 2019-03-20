@@ -2,88 +2,84 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!--Added custom font family via link below. This is currently added to the whole body via style.css file also below-->
-		    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Rambla" rel="stylesheet">
-		    <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-      <div class="wrapper">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Nerd-lator</h1>
-              <h2 class="display-4 custom-font">Old-English Translator</h2>
-              <p class="lead">Translate Modern writting to Old Engligh</p>
-              <div class="media">
-                <img src="assets/knight2.png" class="mr-3 float-right" alt="...">
-              </div>
-              <!--Added a container and card to hold the Old Engish facts.
-			          facts will be dynamically added with a p tag between blockquote tag-->
-              <div class="fun-facts">
-              </div>
-            </div>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <!--Added custom font family via link below. This is currently added to the whole body via style.css file also below-->
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Rambla" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+              <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
+    <div class="wrapper">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Nerd-lator</h1>
+          <h2 class="display-4 custom-font">Old-English Translator</h2>
+          <p class="lead">Translate Modern writting to Old Engligh</p>
+          <div class="media">
+            <img src="assets/knight2.png" class="mr-3 float-right" alt="...">
+          </div>
+          <!--Added a container and card to hold the Old Engish facts.
+                  facts will be dynamically added with a p tag between blockquote tag-->
+          <div class="fun-facts">
+          </div>
         </div>
-          
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Old Engligh Translator</li>
-            </ol>
-          </nav>
-          
-
-<br><br>
-            <form>
-                    <div class="row">
-                    <div class="col">
-                        <textarea class="form-control" id="english" rows="7" placeholder="Input Text Here"></textarea>
-                        <button type="button" id="translate" class="btn btn-primary btn-sm float-left">Translate</button>
-                    </div>
-                    <div class="col">
-                        <textarea class="form-control" id="Old-English" rows="7" placeholder="Translated Text"></textarea>
-                        <button type="button" id="copy-to-clipboard" class="btn btn-primary btn-sm float-left" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            Copy to Clipboard
-                          </button>
-                        <button type="button" id="clear" class="btn btn-secondary btn-sm float-right">Clear</button>
-                        </div>
-                    </div>
-                    
-                </form> 
-
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Old Engligh Translator</li>
+        </ol>
+      </nav>
+      <br><br>
+      <form>
+        <div class="row">
+          <div class="col">
+            <textarea class="form-control" id="english" rows="7" placeholder="Input Text Here"></textarea>
+            <button type="button" id="translate" class="btn btn-primary btn-sm float-left">Translate</button>
+          </div>
+          <div class="col">
+            <textarea class="form-control" id="Old-English" rows="7" placeholder="Translated Text"></textarea>
+            <button type="button" id="copy-to-clipboard" class="btn btn-primary btn-sm float-left" data-toggle="button"
+              aria-pressed="false" autocomplete="off">
+              Copy to Clipboard
+            </button>
+            <button type="button" id="clear" class="btn btn-secondary btn-sm float-right">Clear</button>
+          </div>
+        </div>
+      </form>
       <!--<div class="footer">
-        <div class="card text-center">
-          <div class="card-body">
-          <h5 class="card-title">History of Engligh Language</h5>
-          <p class="card-text">Although the English language had barely penetrated into Wales, Ireland and the Scottish Highlands by the time of Shakespeare, just two hundred years later, in 1780, John Adams was confident enough to be able to claim (with a certain amount of foresight, but quite reasonably) that English was “destined to be in the next and succeeding centuries more generally the language of the world than Latin was in the last or French is in the present age”. In 1852, the German linguist, Jacob Grimm, called English "the language of the world", and predicted it was "destined to reign in future with still more extensive sway over all parts of the glob</p>
-          <a href="https://www.thehistoryofenglish.com/history_late_modern.html" class="btn btn-primary">Read More</a>
-        </div> -->
+          <div class="card text-center">
+            <div class="card-body">
+            <h5 class="card-title">History of Engligh Language</h5>
+            <p class="card-text">Although the English language had barely penetrated into Wales, Ireland and the Scottish Highlands by the time of Shakespeare, just two hundred years later, in 1780, John Adams was confident enough to be able to claim (with a certain amount of foresight, but quite reasonably) that English was “destined to be in the next and succeeding centuries more generally the language of the world than Latin was in the last or French is in the present age”. In 1852, the German linguist, Jacob Grimm, called English "the language of the world", and predicted it was "destined to reign in future with still more extensive sway over all parts of the glob</p>
+            <a href="https://www.thehistoryofenglish.com/history_late_modern.html" class="btn btn-primary">Read More</a>
+          </div> -->
       <div class="footer1">
         <div class="card-footer text-muted">
-                      Nerd-lator copyright 2019
-        </div> 
-      </div>            
+          Nerd-lator copyright 2019
+        </div>
       </div>
     </div>
-
-          
-        
-        <script src="" async defer></script>
-        <!--jQuery-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<!-- Bootstrap CDN-->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-		<!--Personal js file-->
-		<script src="javascript/app.js" async defer></script>
-    </body>
-<!--[if gt IE 8]><!-->
+    <!--jQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--Personal js file-->
+    <script src="javascript/app.js" async defer></script>
+  </body>
+  <!--[if gt IE 8]><!-->
+</html>
