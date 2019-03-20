@@ -72,6 +72,7 @@ textarea, input, div.form-control {
   background-image: url("../assets/images/parchment_one.png");
   background-size: cover;
   align-content: center;
+  padding:1em 0em;
 }
 #english, #engAnimated, #Old-English {
   background-color: tan;
