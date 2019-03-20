@@ -41,6 +41,7 @@ body {
     text-align: center;
     padding: 0%;
     background: white;
+    font-family: 'UnifrakturMaguntia';
 
   }
 
@@ -49,6 +50,10 @@ body {
   }
   
 .custom-font{
+  font-family: 'UnifrakturMaguntia';
+}
+
+button{
   font-family: 'UnifrakturMaguntia';
 }
 
@@ -80,6 +85,5 @@ button {
   margin: 1%;
 }
 body{
-font-family: 'UnifrakturMaguntia';
 background-image: url("../assets/images/parchment_one.png");
 }

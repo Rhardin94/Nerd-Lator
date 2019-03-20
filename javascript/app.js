@@ -1,5 +1,10 @@
 //Makes sure HTML loads first
 $(document).ready(function () {
+  //Function that swaps Klingon font with Star Trek Font
+  window.setTimeout(fontSwap, 4000);
+  function fontSwap() {
+    $(".wrapper").removeClass("funkyFont");
+  }
   //Hide the animation divs on page load
   $("#origAnimated").hide();
   $("#engAnimated").hide();
@@ -62,35 +67,35 @@ var kliFacts = [
   "Klingon culture values victory in combat above all else. Their greeting and even mating is all about violence and brutality.",
   ];
   //Function to animate Klingon facts
-  function factAnimate(){
+  function factsAnimate(){
   const animateFacts = $(".animated-word");
   animateFacts.addClass('animated fadeIn');
   }
   //This setTimeout runs the facts function
-  setTimeout(facts, 1000);
+  setTimeout(kFacts, 1000);
   //facts function which dynamically shows each item from kliFacts array one at a time in a p tag with a delay timer
-  function facts(){
+  function kFacts(){
       setTimeout(function(){
           $(".cool-facts").html("<p class=animated-word>" + kliFacts[0]);
-          factAnimate();
+          factsAnimate();
       }, 2000);
       setTimeout(function(){
           $(".cool-facts").html("<p class=animated-word>" + kliFacts[1]);
-          factAnimate();
+          factsAnimate();
       }, 8000);
       setTimeout(function(){
           $(".cool-facts").html("<p class=animated-word>" +kliFacts[2]);
-          factAnimate()
+          factsAnimate()
       }, 14000);
       setTimeout(function(){
           $(".cool-facts").html("<p class=animated-word>" +kliFacts[3]);
-          factAnimate()
+          factsAnimate()
       }, 20000);
       setTimeout(function(){
           $(".cool-facts").html("<p class=animated-word>" +kliFacts[4]);
-          factAnimate()
+          factsAnimate()
       }, 26000);
-      setTimeout(facts, 32000);
+      setTimeout(kFacts, 32000);
   }
   //Functions for Old-English.html  }
   //on-click for old-english translate button
@@ -149,16 +154,13 @@ var oeFacts = [
 "fact5",
 "fact6",
 ];
-
-//Function to animate Old English facts
+/*Function to animate Old English facts
 function factAnimate(){
 const animateFacts = document.querySelector('.animate-word');
 animateFacts.classList.add('animated','flipInX');
 }
-
 //This setTimeout runs the facts function
 setTimeout(facts,1000);
-
 //facts function which dynamically shows each item from oeFacts array one at a time in a p tag with a delay timer
 function facts(){
     setTimeout(function(){
@@ -187,4 +189,4 @@ function facts(){
     },15000);
 
     setTimeout(facts,18000);
-}
+}*/
