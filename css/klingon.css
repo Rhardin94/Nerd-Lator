@@ -16,7 +16,9 @@ body {
 /*Class for Klingon alphabet*/
 .funkyFont {
     font-family: "Klingon";
+    background-image: url("../assets/images/klingon2.jpg"); /*Images found here "https://wallpapercave.com/klingon-wallpaper"*/
 }
-textarea {
+textarea, input, div.form-control {
     resize: none;
+    overflow: auto;
 }

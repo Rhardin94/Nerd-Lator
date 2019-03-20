@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="css/normalize.css">
     <!--Animate CSS-->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Bootstrap CSS -->
@@ -15,29 +17,29 @@
     <!--Title-->
     <title>Klingon Translator</title>
   </head>
-  <body>
-  <div class="wrapper funkyFont">
-    <div class="jumbotron jumbotron-fluid">
+  <body class="funkyFont"> 
+  <div class="wrapper">
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
       <div class="container">
         <!--<h1 class="text-center"><img src="https://fontmeme.com/permalink/190318/d7f2b0d493e1cbb416c4ebdf6ec31062.png" alt="star-trek-font" border="0"></a></h1>-->
-        <h1 class="text-center">!Nerd-Lator!</h1>
+        <h1 class="text-center display-3">Nerd-Lator</h1>
         <!--<h2 class="text-center"><img src="https://fontmeme.com/permalink/190316/72d98e4a9a0d86a5347a367264ab3172.png" alt="star-trek-font" border="0"></a></h2>-->
-        <h2 class="text-center">Klingon!</h2>
-        <p class="text-center">Translate English into Star Trek native language Klingon</p>
+        <h2 class="text-center display-4">Klingon!</h2>
+        <h3 class="text-center display-5">Translate English into Star Trek native language Klingon</h3>
         <!--<p class="text-center"><img src="https://fontmeme.com/permalink/190316/8f5e3007e1d1a7e93bb447e98b4e21fe.png" alt="star-trek-font" border="0"></a></p>-->
-        <a href="index.html"><button type="button" id="Home" class="btn btn-primary">Home</button></a>
+        <a href="index.html"><button type="button" id="Home" class="btn btn-danger">Home</button></a>
         <div class="cool-facts"></div>
       </div>
     </div>
     <form>
     <div class="row m-2">
       <div class="col">
-          <input class="form-control mb-2" id="original" rows="10" placeholder="input text here">
-          <div class="form-control mb-2" id="origAnimated"></div>
+          <input class="form-control mb-2 bg-dark text-white" id="original" placeholder="input text here">
+          <div class="form-control mb-2 bg-dark text-white" id="origAnimated"></div>
           <button type="button" id="translated" class="btn btn-danger button-large">Translate</button>
         </div>
         <div class="col">
-          <div class="form-control mb-2" id="Klingon"></div>
+          <div class="form-control mb-2 bg-dark text-white" id="Klingon"></div>
           <button type="button" id="copy-to-clipboard" class="btn btn-danger">Copy to Clipbopard</button>
           <button type="button" id="cleared" class="btn btn-danger button-large">Clear</button>
         </div>
@@ -46,7 +48,7 @@
     <div class="card text-center">
       <div class="footer">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body bg-dark text-white">
             <p class="card-text">Nerd-Lator &copy; 2019.</p>
           </div>
         </div>

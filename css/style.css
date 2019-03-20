@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'UnifrakturMaguntia';
+    font-style: italic;
     font-size: 18px;
     line-height: 34px;
-    background: url("../assets/woodbg1.jpg");
+    background: url("../assets/images/mead-hall.png");
     background-repeat: no-repeat no-repeat;
     background-size: cover;
-    height: 1280px;
+    /*height: 1280px;*/
   }
-  
   * {
     box-sizing: border-box;
   }
@@ -21,69 +21,52 @@ body {
     height:auto;
     width:125px;
   }
-
   .wrapper {
     margin: 5%;
   }
-
   h1 {
     text-align: center;
   }
-
   .footer{
     display: inline;
     margin-top: 5em;
-
   }
-
   .footer1 {
     margin-top: 5em;
     text-align: center;
     padding: 0%;
     background: white;
     font-family: 'UnifrakturMaguntia';
-
   }
-
   h2 {
     text-align: center;
   }
-  
 .custom-font{
   font-family: 'UnifrakturMaguntia';
 }
-
 button{
   font-family: 'UnifrakturMaguntia';
 }
-
 .lead{
   text-align: center;
 }
-
 .card-header {
   text-align: center;
   background: black;
   color: aliceblue;
 }
-
 .card-body {
   background: beige;
   color: black;
 }
-
 form{
   margin: 1%;
   padding: 5px;
 }
-
-textarea {
-  resize: none;
-}
-
 button {
   margin: 1%;
 }
-body{
-background-image: url("../assets/images/parchment_one.png");
+textarea, input, div.form-control {
+  resize: none;
+  overflow: auto;
 }

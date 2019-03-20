@@ -11,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="css/normalize.css">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Added custom font family via link below. This is currently added to the whole body via style.css file also below-->
@@ -29,11 +31,11 @@
     <div class="wrapper">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Nerd-lator</h1>
+          <h1 class="display-3">Nerd-lator</h1>
           <h2 class="display-4 custom-font">Old-English Translator</h2>
-          <p class="lead">Translate Modern writting to Old Engligh</p>
+          <p class="lead">Translate Modern writing to Old English</p>
           <div class="media">
-            <img src="assets/knight2.png" class="mr-3 float-right" alt="...">
+            <img src="assets/images/knight2.png" class="mr-3 float-right" alt="...">
           </div>
           <!--Added a container and card to hold the Old Engish facts.
                   facts will be dynamically added with a p tag between blockquote tag-->
@@ -44,7 +46,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Old Engligh Translator</li>
+          <li class="breadcrumb-item active" aria-current="page">Old English Translator</li>
         </ol>
       </nav>
       <br><br>
@@ -53,12 +55,12 @@
           <div class="col">
             <input class="form-control" id="english" rows="7" placeholder="Input Text Here">
             <div class="form-control mb-2" id="engAnimated"></div>
-            <button type="button" id="translate" class="btn btn-primary button-large float-left">Translate</button>
+            <button type="button" id="translate" class="btn btn-dark button-large float-left">Translate</button>
           </div>
           <div class="col">
             <div class="form-control" id="Old-English" rows="7" placeholder="Translated Text"></div>
-            <button type="button" id="copy-to-clipboard" class="btn btn-primary"> Copy to Clipboard</button>
-            <button type="button" id="clear" class="btn btn-secondary button-large">Clear</button>
+            <button type="button" id="copy-to-clipboard" class="btn btn-dark"> Copy to Clipboard</button>
+            <button type="button" id="clear" class="btn btn-secondary btn-dark">Clear</button>
           </div>
         </div>
       </form>

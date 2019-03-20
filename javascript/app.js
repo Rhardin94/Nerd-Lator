@@ -3,7 +3,7 @@ $(document).ready(function () {
   //Function that swaps Klingon font with Star Trek Font
   window.setTimeout(fontSwap, 4000);
   function fontSwap() {
-    $(".wrapper").removeClass("funkyFont");
+    $("body").removeClass("funkyFont");
   }
   //Hide the animation divs on page load
   $("#origAnimated").hide();
@@ -31,16 +31,18 @@ $(document).ready(function () {
     $("#origAnimated").show();
     $("#origAnimated").append(textHolder);
     window.setTimeout(divSwap, 1000);
-    textHolder.addClass("animated flipOutX");   
+    textHolder.addClass("animated fadeOut");   
     $.ajax({
       url: queryURL,
       method: "GET",
+      headers: {
+        "X-FunTranslations-Api-Secret": "3S5WzR119t49935jscXzSgeF",
+      }
     }).then(function (response) {
       let textResponse = response.contents.translated;
       let engResponse = response.contents.text;
       let textHolder = $("<span>").text("(" + engResponse + ") " + textResponse);
-      textHolder.addClass("animated flipInX");
-      console.log(textHolder);
+      textHolder.addClass("animated fadeIn");
       $("#Klingon").append(textHolder);
     })
   })
@@ -110,15 +112,18 @@ var kliFacts = [
     $("#engAnimated").show();
     $("#engAnimated").append(engHolder);
     window.setTimeout(engDivSwap, 1000);
-    engHolder.addClass("animated flipOutX");
+    engHolder.addClass("animated fadeOut");
     $.ajax({
       url: eQueryURL,
       method: "GET",
+      headers: {
+        "X-FunTranslations-Api-Secret": "QsiIkEAVkbGd_qXfagBAHAeF",
+      }
     }).then(function(data) {
       let transResponse = data.contents.translated
       let engData = data.contents.text;
       let transHolder = $("<span>").text("(" + engData + ") " + transResponse);
-      transHolder.addClass("animated flipInX");
+      transHolder.addClass("animated fadeIn");
       console.log(transHolder.text());
       $("#Old-English").append(transHolder);
     })
@@ -148,19 +153,19 @@ $("#cleared").on("click", function() {
 //Array for Old English facts (currently with some placeholder data)
 var oeFacts = [
 "Old English language, also called Anglo-saxon, language spoken and written in England before 1100; it is the ancestor of Middle English and Modern English.",
-"fact2",
-"fact3",
-"fact4",
-"fact5",
-"fact6",
+"Old English was spoken by the Anglo-Saxons who came to England from what is now Germany and Denmark.",
+"Old English is very different from Modern English; it has many more Germanic words, and its grammar is more difficult and closer to Old German. Old English slowly turned into Middle English after the Norman Conquest of 1066.",
+"Beowulf is written in Old English. It is an Old English epic poem consisting of 3,182 alliterative lines. It is arguably one of the most important works of Old English literature.",
+"Beowulf, a hero of the Geats, comes to the aid of Hrothgar, the king of the Danes, whose mead hall in Heorot has been under attack by a monster known as Grendel.",
+"In 1852, the German linguist, Jacob Grimm, called English 'the language of the world', and predicted it was 'destined to reign in future with still more extensive sway over all parts of the globe.",
 ];
-/*Function to animate Old English facts
+//Function to animate Old English facts
 function factAnimate(){
 const animateFacts = document.querySelector('.animate-word');
 animateFacts.classList.add('animated','flipInX');
 }
 //This setTimeout runs the facts function
-setTimeout(facts,1000);
+/*setTimeout(facts,1000);*/
 //facts function which dynamically shows each item from oeFacts array one at a time in a p tag with a delay timer
 function facts(){
     setTimeout(function(){
@@ -189,4 +194,4 @@ function facts(){
     },15000);
 
     setTimeout(facts,18000);
-}*/
+}
