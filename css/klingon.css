@@ -22,3 +22,8 @@ textarea, input, div.form-control {
     resize: none;
     overflow: auto;
 }
+footer {
+    margin-top: 5em;
+    text-align: center;
+    padding: 0%;
+}

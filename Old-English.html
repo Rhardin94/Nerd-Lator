@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
   <head>
     <!--Required Meta tags-->
     <meta charset="utf-8">
@@ -25,53 +20,39 @@
     <title>Old-English</title>
   </head>
   <body>
-    <!--[if lt IE 7]>
-              <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-          <![endif]-->
+    <!--Jumbotron!-->
     <div class="wrapper">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-3">Nerd-lator</h1>
           <h2 class="display-4 custom-font">Old-English Translator</h2>
-          <p class="lead">Translate Modern writing to Old English</p>
+          <h3 class="lead">Translate Modern writing to Old English</h3>
           <div class="media">
             <img src="assets/images/knight2.png" class="mr-3 float-right" alt="...">
           </div>
           <!--Added a container and card to hold the Old Engish facts.
-                  facts will be dynamically added with a p tag between blockquote tag-->
-          <div class="fun-facts">
-          </div>
+                  facts will be dynamically added with a p tag between div tag-->
+          <div class="fun-facts"></div>
+          <a href="index.html"><button type="button" id="Home" class="btn btn-secondary">Home</button></a>
         </div>
       </div>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Old English Translator</li>
-        </ol>
-      </nav>
-      <br><br>
+      <!--Form that holds the boxes for text translation-->
       <form>
         <div class="row">
-          <div class="col">
+          <div class="col-lg-6 col-sm-12">
             <input class="form-control" id="english" rows="7" placeholder="Input Text Here">
             <div class="form-control mb-2" id="engAnimated"></div>
             <button type="button" id="translate" class="btn btn-dark button-large float-left">Translate</button>
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-sm-12">
             <div class="form-control" id="Old-English" rows="7" placeholder="Translated Text"></div>
-            <button type="button" id="copy-to-clipboard" class="btn btn-dark"> Copy to Clipboard</button>
+            <button type="button" id="Copy-to-Clipboard" class="btn btn-dark mb-2"> Copy to Clipboard</button>
             <button type="button" id="clear" class="btn btn-secondary btn-dark">Clear</button>
           </div>
         </div>
       </form>
-      <!--<div class="footer">
-          <div class="card text-center">
-            <div class="card-body">
-            <h5 class="card-title">History of Engligh Language</h5>
-            <p class="card-text">Although the English language had barely penetrated into Wales, Ireland and the Scottish Highlands by the time of Shakespeare, just two hundred years later, in 1780, John Adams was confident enough to be able to claim (with a certain amount of foresight, but quite reasonably) that English was “destined to be in the next and succeeding centuries more generally the language of the world than Latin was in the last or French is in the present age”. In 1852, the German linguist, Jacob Grimm, called English "the language of the world", and predicted it was "destined to reign in future with still more extensive sway over all parts of the glob</p>
-            <a href="https://www.thehistoryofenglish.com/history_late_modern.html" class="btn btn-primary">Read More</a>
-          </div> -->
-      <div class="footer1">
+      <!--Footer that holds copyright info-->
+      <div class="footer">
         <div class="card-footer text-muted">
           Nerd-lator &copy; 2019
         </div>
@@ -84,5 +65,4 @@
     <!--Personal js file-->
     <script src="javascript/app.js" async defer></script>
   </body>
-  <!--[if gt IE 8]><!-->
 </html>
