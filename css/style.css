@@ -73,3 +73,12 @@ textarea, input, div.form-control {
   background-size: cover;
   align-content: center;
 }
+#english, #engAnimated, #Old-English {
+  background-color: tan;
+  border: black 2px solid;
+  color: black;
+}
+.card-footer {
+  background-color: tan;
+  border: black 2px solid;
+}
