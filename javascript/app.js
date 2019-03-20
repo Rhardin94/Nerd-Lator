@@ -61,7 +61,7 @@ var kliFacts = [
   //Function to animate Old English facts
   function factAnimate(){
   const animateFacts = $(".animate-word");
-  animateFacts.addClass('animated flipInX');
+  animateFacts.addClass('animated fadeIn');
   }
   //This setTimeout runs the facts function
   setTimeout(facts, 1000);
