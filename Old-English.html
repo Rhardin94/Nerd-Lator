@@ -5,19 +5,22 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-
   <head>
+    <!--Required Meta tags-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Added custom font family via link below. This is currently added to the whole body via style.css file also below-->
     <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Rambla" rel="stylesheet">
+    <!--Animate.css-->
     <link rel="stylesheet" href="css/animate.css">
+    <!--Personal CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Title-->
+    <title>Old-English</title>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -48,15 +51,13 @@
       <form>
         <div class="row">
           <div class="col">
-            <textarea class="form-control" id="english" rows="7" placeholder="Input Text Here"></textarea>
+            <input class="form-control" id="english" rows="7" placeholder="Input Text Here"></textarea>
+            <div class="form-control mb-2" id="engAnimated"></div>
             <button type="button" id="translate" class="btn btn-primary btn-sm float-left">Translate</button>
           </div>
           <div class="col">
             <textarea class="form-control" id="Old-English" rows="7" placeholder="Translated Text"></textarea>
-            <button type="button" id="copy-to-clipboard" class="btn btn-primary btn-sm float-left" data-toggle="button"
-              aria-pressed="false" autocomplete="off">
-              Copy to Clipboard
-            </button>
+            <button type="button" id="copy-to-clipboard" class="btn btn-primary btn-sm float-left" data-toggle="button" aria-pressed="false" autocomplete="off"> Copy to Clipboard</button>
             <button type="button" id="clear" class="btn btn-secondary btn-sm float-right">Clear</button>
           </div>
         </div>
@@ -70,7 +71,7 @@
           </div> -->
       <div class="footer1">
         <div class="card-footer text-muted">
-          Nerd-lator copyright 2019
+          Nerd-lator &copy; 2019
         </div>
       </div>
     </div>
