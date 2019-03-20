@@ -63,7 +63,7 @@ var kliFacts = [
   ];
   //Function to animate Klingon facts
   function factAnimate(){
-  const animateFacts = $(".animate-word");
+  const animateFacts = $(".animated-word");
   animateFacts.addClass('animated fadeIn');
   }
   //This setTimeout runs the facts function
@@ -71,23 +71,23 @@ var kliFacts = [
   //facts function which dynamically shows each item from kliFacts array one at a time in a p tag with a delay timer
   function facts(){
       setTimeout(function(){
-          $(".cool-facts").html("<p class=animate-word>" + kliFacts[0]);
+          $(".cool-facts").html("<p class=animated-word>" + kliFacts[0]);
           factAnimate();
       }, 2000);
       setTimeout(function(){
-          $(".cool-facts").html("<p class=animate-word>" + kliFacts[1]);
+          $(".cool-facts").html("<p class=animated-word>" + kliFacts[1]);
           factAnimate();
       }, 8000);
       setTimeout(function(){
-          $(".cool-facts").html("<p class=animate-word>" +kliFacts[2]);
+          $(".cool-facts").html("<p class=animated-word>" +kliFacts[2]);
           factAnimate()
       }, 14000);
       setTimeout(function(){
-          $(".cool-facts").html("<p class=animate-word>" +kliFacts[3]);
+          $(".cool-facts").html("<p class=animated-word>" +kliFacts[3]);
           factAnimate()
       }, 20000);
       setTimeout(function(){
-          $(".cool-facts").html("<p class=animate-word>" +kliFacts[4]);
+          $(".cool-facts").html("<p class=animated-word>" +kliFacts[4]);
           factAnimate()
       }, 26000);
       setTimeout(facts, 32000);
@@ -96,6 +96,9 @@ var kliFacts = [
   //on-click for old-english translate button
   $("#translate").on("click", function () {
     let engInput = $("#english").val().trim();
+    if ($("#english").val() === "") {
+      return false;
+    }
     let eQueryURL = "https://api.funtranslations.com/translate/oldenglish.json?text=" + engInput;
     let engHolder = $("<span>").text(engInput);
     $("#english").hide();
