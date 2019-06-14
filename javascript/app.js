@@ -35,10 +35,7 @@ $(document).ready(function () {
     textHolder.addClass("animated fadeOut");
     $.ajax({
       url: queryURL,
-      method: "GET",
-      headers: {
-        "X-FunTranslations-Api-Secret": "3S5WzR119t49935jscXzSgeF",
-      }
+      method: "GET"
     }).then(function (response) {
       let textResponse = response.contents.translated;
       let engResponse = response.contents.text;
@@ -131,10 +128,7 @@ $(document).ready(function () {
     engHolder.addClass("animated fadeOut");
     $.ajax({
       url: eQueryURL,
-      method: "GET",
-      headers: {
-        "X-FunTranslations-Api-Secret": "QsiIkEAVkbGd_qXfagBAHAeF",
-      }
+      method: "GET"
     }).then(function (data) {
       let transResponse = data.contents.translated
       let engData = data.contents.text;
