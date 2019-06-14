@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
-	<head>
-		<!-- Required meta tags -->
+  <head>
+    <!--Required Meta tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<!--Animate CSS-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Added custom font family via link below. This is currently added to the whole body via style.css file also below-->
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Rambla" rel="stylesheet">
+    <!--Animate.css-->
     <link rel="stylesheet" href="css/animate.css">
-		<!--Title-->
-		<title>Old-English</title>
-	</head>
-	<body>
-		<!--[if lt IE 7]>
-								<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-						<![endif]-->
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
-					<a href="index.html"><button type="button" id="Home" class="btn btn-secondary">Home</button></a>
-				<h1 class="display-4">Old-English Translator</h1>
-				<p class="lead">Translate Modern writing to Old English</p>
-			</div>
-		</div>
-		<form>
-			<div class="row m-2">
-				<div class="col">
-					<input class="form-control mb-2" id="english" rows="10" placeholder="input text here">
-					<div class="form-control mb-2" id="engAnimated"></div>
-					<button type="button" id="translate" class="btn btn-secondary btn-lg">Translate</button>
-				</div>
-				<div class="col">
-					<div class="form-control mb-2" id="Old-English"></div>
-					<button type="button" id="copy-to-clipboard" class="btn btn-secondary">Copy to Clipbopard</button>
-					<button type="button" id="clear" class="btn btn-secondary button-large">Clear</button>
-				</div>
-			</div>
-		</form>
-		<!--jQuery-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<!--Personal js file-->
-		<script src="javascript/app.js" async defer></script>
-	</body>
-
+    <!--Personal CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Title-->
+    <title>Old-English</title>
+  </head>
+  <body>
+    <!--Jumbotron!-->
+    <div class="wrapper">
+      <div class="jumbotron jumbotron-fluid p-2">
+        <div class="container">
+          <h1 class="display-3">Nerd-lator</h1>
+          <h2 class="display-4 custom-font">Old-English Translator</h2>
+          <h3 class="lead">Translate Modern Written English to Anglo-Saxon born Old English</h3>
+          <div class="media">
+            <img src="assets/images/knight2.png" class="mr-3 float-right" alt="...">
+          </div>
+          <!--Old English facts will be dynamically added with a p tag between div tag-->
+          <div class="fun-facts"></div>
+          <a href="index.html"><button type="button" id="Home" class="btn btn-secondary">Home</button></a>
+        </div>
+      </div>
+      <!--Form that holds the boxes for text translation-->
+      <form>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <input class="form-control" id="english" rows="7" placeholder="Input Text Here">
+            <div class="form-control mb-2" id="engAnimated"></div>
+            <button type="button" id="translate" class="btn btn-dark button-large float-left">Translate</button>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="form-control" id="Old-English" rows="7" placeholder="Translated Text"></div>
+            <button type="button" id="Copy-to-Clipboard" class="btn btn-dark mb-2"> Copy to Clipboard</button>
+            <button type="button" id="clear" class="btn btn-secondary btn-dark">Clear</button>
+          </div>
+        </div>
+      </form>
+      <!--Footer that holds copyright info-->
+      <div class="footer">
+        <div class="card-footer text-muted">
+          Nerd-lator &copy; 2019
+        </div>
+      </div>
+    </div>
+    <!--jQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--Personal js file-->
+    <script src="javascript/app.js" async defer></script>
+  </body>
 </html>

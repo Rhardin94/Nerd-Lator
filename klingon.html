@@ -4,91 +4,63 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="css/normalize.css">
     <!--Animate CSS-->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--klingon CSS-->
-    <link rel="stylesheet" href="klingon.css">
-
-   
-
-    <title>Klingon Translator</title>
-    <title>Klingon Transltor</title>
-    <a href="index.html"><button type="button" id="Home" class="btn btn-primary">Home</button></a>
-  </head>
-  <body>
-    <div class="wrapper">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4"><img src="https://fontmeme.com/permalink/190318/d7f2b0d493e1cbb416c4ebdf6ec31062.png" alt="star-trek-font" border="0"></a></h1>
-        <h2 class="display-4"><img src="https://fontmeme.com/permalink/190316/72d98e4a9a0d86a5347a367264ab3172.png" alt="star-trek-font" border="0"></a></h2>
-        <p class="lead"><img src="https://fontmeme.com/permalink/190316/8f5e3007e1d1a7e93bb447e98b4e21fe.png" alt="star-trek-font" border="0"></a></p>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous">
+    <!--Star Trek Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Rambla:700i" rel="stylesheet">
+    <!--klingon CSS-->
+    <link rel="stylesheet" href="css/klingon.css">
     <!--Title-->
     <title>Klingon Translator</title>
   </head>
-  <body>
-    <!--Div that holds the language title and info-->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container text-center">
-        <a href="index.html"><button type="button" id="Home" class="btn btn-danger">Home</button></a>
-        <h1 class="display-4">!NERD-LATOR!</h1>
-        <hr class="my-2">
-        <h2 class="display-4">Klingon!</h2>
-        <h4>Translate English into Star Trek born language Klingon.</h4>
-      </div>
-    </div>
-    <form>
-      <div class="row m-2">
-        <div class="col">
-          <textarea class="form-control" id="english" rows="10" placeholder="input text here."></textarea> 
-        </div>
-        <div class="col">
-          <textarea class="form-control" id="Klingon" rows="10" placeholder="Klingon text here."></textarea>
+  <body class="funkyFont"> <!--Added class to this body for specific font function-->
+    <!--Jumbotron!-->
+    <div class="wrapper">
+      <div class="jumbotron jumbotron-fluid bg-dark text-white p-2 border border-light">
+        <div class="container">
+          <!--<h1 class="text-center"><img src="https://fontmeme.com/permalink/190318/d7f2b0d493e1cbb416c4ebdf6ec31062.png" alt="star-trek-font" border="0"></a></h1>-->
+          <h1 class="text-center display-3">Nerd-Lator</h1>
+          <!--<h2 class="text-center"><img src="https://fontmeme.com/permalink/190316/72d98e4a9a0d86a5347a367264ab3172.png" alt="star-trek-font" border="0"></a></h2>-->
+          <h2 class="text-center display-4">Klingon!</h2>
+          <h3 class="text-center display-5">Translate English into Star Trek native language Klingon</h3>
+          <!--<p class="text-center"><img src="https://fontmeme.com/permalink/190316/8f5e3007e1d1a7e93bb447e98b4e21fe.png" alt="star-trek-font" border="0"></a></p>-->
+          <div class="cool-facts text-center"></div>
+          <a href="index.html"><button type="button" id="Home" class="btn btn-danger">Home</button></a>
         </div>
       </div>
-      <!--Can you make your ID's different from the Old-English page for now?-->
-      <button type="button" id="translated" class="button button-primary button-large"><img src="https://fontmeme.com/permalink/190316/6cb08872974a451065060404cc6ef784.png" alt="star-trek-font" border="0"></a></button>
-      <button type="button" id="cleared" class="button button-secondary button-large"><img src="https://fontmeme.com/permalink/190316/4bcdef82b310e7660f726f36a40b12ba.png" alt="star-trek-font" border="0"></a></button>
-          <textarea class="form-control" id="original" rows="10" placeholder="input text here"></textarea> 
-          <button type="button" id="translated" class="button button-primary button-large">translate</button>
-          <button type="button" id="cleared" class="button button-secondary button-large">clear</button>
-          <input class="form-control mb-2" id="original" rows="10" placeholder="input text here">
-          <div class="form-control mb-2" id="origAnimated"></div>
-          <button type="button" id="translated" class="btn btn-danger button-large">Translate</button>
+      <!--Form that holds the boxes for text translation-->
+      <form>
+        <div class="row m-2">
+          <div class="col-lg-6 col-sm-12">
+            <input class="form-control mb-2 bg-dark text-white" id="original" rows="7" placeholder="input text here">
+            <div class="form-control mb-2 bg-dark text-white" id="origAnimated"></div>
+            <button type="button" id="translated" class="btn btn-danger button-large mb-2">Translate</button>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="form-control mb-2 bg-dark text-white" rows="7" id="Klingon"></div>
+            <button type="button" id="copy-to-clipboard" class="btn btn-danger mb-2">Copy to Clipboard</button>
+            <button type="button" id="cleared" class="btn btn-danger button-large mb-2">Clear</button>
+          </div>
         </div>
-        <div class="col">
-          <div class="form-control mb-2" id="Klingon"></div>
-          <button type="button" id="copy-to-clipboard" class="btn btn-danger">Copy to Clipbopard</button>
-          <button type="button" id="cleared" class="btn btn-secondary button-large">Clear</button>
-        </div>
-      </div>
-    </form>
-
-    <div class="footer">
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Nerd-Lator Copyright 2019.</p>
+      </form>
+      <!--Footer that holds copyright info-->
+      <div class="footer">
+        <div class="card-footer text-muted bg-dark text-white text-center mt-5 p-3 border border-light">
+          Nerd-Lator &copy; 2019.
         </div>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!--jQuery-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </div>
-    <!--jQuery-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+          <!--jQuery first,-->
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <!--then Popper.js,-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
+          <!--then Bootstrap JS-->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous"></script>
     <!--Personal js file-->
     <script src="javascript/app.js"></script>
   </body>

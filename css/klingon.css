@@ -1,0 +1,29 @@
+/*Adding Klingon font to use later*/
+@font-face {
+    font-family: "Klingon";
+    src: url("klingon-font.ttf") format("truetype");
+}
+body {
+    font-family: "Rambla";
+    background: url("../assets/images/star_trek.jpg") center bottom scroll;
+    background-repeat: no-repeat no-repeat;
+    background-size: 100% 100%;
+    height: 1106px;
+}
+.wrapper {
+    margin: 5%;
+}
+/*Class for Klingon alphabet*/
+.funkyFont {
+    font-family: "Klingon";
+    background-image: url("../assets/images/klingon2.jpg"); /*Images found here "https://wallpapercave.com/klingon-wallpaper"*/
+}
+textarea, input, div.form-control {
+    resize: none;
+    overflow: auto;
+}
+footer {
+    margin-top: 5;
+    text-align: center;
+    padding: 0%;
+}

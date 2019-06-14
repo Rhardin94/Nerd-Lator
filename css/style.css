@@ -1,0 +1,85 @@
+body {
+    font-family: 'UnifrakturMaguntia';
+    font-style: italic;
+    font-size: 18px;
+    line-height: 34px;
+    background: url("../assets/images/mead-hall.png");
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    /*height: 1280px;*/
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+  .media > img{
+    height:auto;
+    width:125px;
+    margin: 3px;
+  }
+  .wrapper {
+    margin: 5%;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .footer {
+    margin-top: 5em;
+    text-align: center;
+    padding: 0%;
+    background: white;
+    font-family: 'UnifrakturMaguntia';
+  }
+  h2 {
+    text-align: center;
+  }
+.custom-font{
+  font-family: 'UnifrakturMaguntia';
+}
+button{
+  font-family: 'UnifrakturMaguntia';
+}
+.lead{
+  text-align: center;
+}
+.card-header {
+  text-align: center;
+  background: black;
+  color: aliceblue;
+}
+.card-body {
+  background: beige;
+  color: black;
+}
+form{
+  margin: 1%;
+  padding: 5px;
+}
+button {
+  margin: 1%;
+}
+textarea, input, div.form-control {
+  resize: none;
+  overflow: auto;
+}
+.jumbotron {
+  background-image: url("../assets/images/parchment_one.png");
+  background-size: cover;
+  align-content: center;
+  padding:1em 0em;
+}
+#english, #engAnimated, #Old-English {
+  background-color: tan;
+  border: black 2px solid;
+  color: black;
+}
+.card-footer {
+  background-color: tan;
+  border: black 2px solid;
+}

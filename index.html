@@ -4,40 +4,50 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
     <title>Nerd-lator!</title>
   </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
+  <body style="background-image:url('assets/images/index-background.jpg');background-repeat: no-repeat;">
+    <div class="wrapper" style="margin:5%;">
+      <div class="jumbotron jumbotron-fluid p-3 ">
         <div class="container">
-        <h1 class="display-4">Nerd-lator</h1>
-        <p class="lead">Nerd-lator is a fun word-translator that calls upon APIs to translate basic english into fun nerd-based text (think Klingon, Yoda-Speak, etc), and then allows you to send that translated text to your friends via copying text to clipboard.</p>
-        <hr class="my-4">
+          <h1 class="display-3 text-center"><strong><em>Nerd-lator!</em></strong></h1>
+          <p class="lead">Welcome to Nerd-Lator; a fun, creative tool that translates the modern English language into
+            nerd-based text.<br> Dive into our easy to use, themed-based language translators!<br> <strong>Venture into
+              different parts of the universe with the <em>Klingon Translator.</em></strong> <br> <strong>Or visit the
+              past with the <em>Old-English Translator.</em></strong> <br>Once you've translated the text of your choice,
+            the Copy to Clipboard button allows you to share your translated message with the click of a finger!</p>
+          <hr class="my-4">
+          <p class="lead">Get Started by clicking on of the buttons below!</p>
         </div>
-    </div>
-
-    <div class="container">
+      </div>
+      <div class="container">
         <div class="row">
-            <div class="col">
-                <a href="klingon.html"><span class="border border-ligh">Klingon Transltor</span></a>
-            </div>
-            <div class="col">
-                <a href="Old-English.html"><span class="border border-ligh">Old English Transltor</span></a>
-            </div>
+          <div class="col">
+            <a href="klingon.html" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Klingon
+              Translator</a><br>
+            <img src="https://i.stack.imgur.com/GHiVy.jpg" class="rounded w-25" alt="responsive image">
+          </div>
+          <div class="col">
+            <a href="Old-English.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Old
+              English Translator</a><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Helmeted_Medieval_Knight_or_Soldier_%281%29.JPG/220px-Helmeted_Medieval_Knight_or_Soldier_%281%29.JPG"
+              class="rounded w-25" alt="responsive image">
+          </div>
         </div>
+      </div>
     </div>
-
-    <img src="https://i.etsystatic.com/6027615/r/il/fafacd/1409442713/il_570xN.1409442713_5sx2.jpg" class="rounded float-left" alt="responsive image">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Helmeted_Medieval_Knight_or_Soldier_%281%29.JPG/220px-Helmeted_Medieval_Knight_or_Soldier_%281%29.JPG" class="rounded float-right" alt="responsive image">
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
   </body>
 </html>
