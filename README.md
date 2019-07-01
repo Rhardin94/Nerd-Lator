@@ -12,7 +12,7 @@ To begin translating, the user may navigate to the desired language/theme via th
 
 ![klingon logo and navigation button to klingon page](/assets/screenshots/klingon.jpg)
 
-![knight logo and navigation button to old english page](/assets/screenshots/oldenglish/jpg)
+![knight logo and navigation button to old english page](/assets/screenshots/oldenglish.jpg)
 
 Upon arrival of the desired language page, the user is presented with unique interactions that are different for every fantasy world. If viewing the Klingon page, all of the text is intially rendered in Klingon alphabet until the site translates it back to English.
 
